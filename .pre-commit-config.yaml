@@ -36,6 +36,10 @@ repos:
         name: Prettier workflow files
         args: ["--print-width=240", "--prose-wrap=always"]
         exclude: "^(?!.github/workflows/)"
+  - repo: https://github.com/zizmorcore/zizmor-pre-commit
+    rev: v1.23.1
+    hooks:
+      - id: zizmor
   - repo: meta
     hooks:
       - id: check-hooks-apply
